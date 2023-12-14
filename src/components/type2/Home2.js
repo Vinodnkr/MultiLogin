@@ -1,25 +1,31 @@
 import React from "react";
-
-import Login2 from "./Login2";
-import { CookiesProvider, useCookies } from "react-cookie";
+import Cookies from 'js-cookie';
+import { useNavigate } from 'react-router-dom';
 
 function Home2() {
-  const [cookies, setCookie] = useCookies(["user"]);
+  const navigate = useNavigate();
 
-  function handleLogin(user) {
-    setCookie("user", user, { path: "/home2" });
-  }
+  const handleLogout = () => {
+    // Delete the 'username' and 'password' cookies (or any other cookies you've set)
+    Cookies.remove('username');
+    Cookies.remove('password');
+
+    // Redirect to the login page
+    navigate('/login2');
+  };
 
   return (
-    <CookiesProvider>
-      <div>
-        {cookies.user ? (
-          <h1>Home page </h1>
-        ) : (
-          <Login2 onLogin={handleLogin} />
-        )}
+    <div className="min-h-screen flex items-center justify-center bg-gray-50">
+      <div className="max-w-md w-full">
+        <h2 className="text-3xl font-extrabold text-center text-gray-900 mb-6">Welcome to the Home Page</h2>
+        <button
+          onClick={handleLogout}
+          className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Logout
+        </button>
       </div>
-    </CookiesProvider>
+    </div>
   );
 }
 

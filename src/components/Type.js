@@ -19,7 +19,7 @@ const Type = () => {
         navigate('/login2');
         break;
       case '3':
-        navigate('/type3');
+        navigate('/login3');
         break;
       case '4':
         navigate('/type4');
