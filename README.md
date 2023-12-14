@@ -1,70 +1,140 @@
-# Getting Started with Create React App
+# Title
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+    user authentication system using different authentication ways.
 
-## Available Scripts
+## Objective
 
-In the project directory, you can run:
+    To create a signup, login and logout responsive page. using Javascript, ReactJs, tailwind css
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    List the primary technologies, languages required for the Assignment
+    (Javascript, ReactJs, tailwind css)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Completion Instructions
 
-### `npm test`
+### Functionality
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Must Have
 
-### `npm run build`
+    List the critical features or tasks mentioned in the Assignment
+    
+    1. Multi user login 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+     -   Multiple users should be able to login.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    2. different authentication ways.
+    
+     -  multiple ways to authentication
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Nice to Have
+    
+    -reset password and username
+    
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Guidelines to develop a project
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### Must Have
+    
+    
+    -register login page
+    -multi user loging
+    - Use localstorage as database storage for user login details.
+    - use cookies
+    -use JWT
+    -use Auth0
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Nice to Have
+    
+    
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    
 
-### Code Splitting
+### Submission Instructions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### Must Have
 
-### Analyzing the Bundle Size
+    List the Instructions to follow while submitting the project mentioned in the Assignment, if any
+    
+    
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### Nice to Have
 
-### Making a Progressive Web App
+    List the suggested instructions to follow while submitting the project mentioned in the Assignment, if any
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Resources
 
-### Advanced Configuration
+### Design files
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    List the references of design files required for the Assignment
 
-### Deployment
+### APIs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+    List the APIs, providing any relevant endpoints, documentation links, or access keys, required for the Assignment if any
 
-### `npm run build` fails to minify
+### Third-party packages
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    List the Third-party packages required for the Assignment, if any
+    -Tailwind Css
+    -
+
+### Set Up Instructions
+
+<details>
+<summary>Click to view</summary>
+
+- Download dependencies by running `npm install`
+- Start up the app using `npm start`
+
+</details>
+
+### Completion Instructions
+<details>
+<summary>Functionality to be added</summary>
+<br/>s
+
+The app must have the following functionalities
+
+-When the user not registered then the user should register by navigating and providing user details to signup page
+-When an unauthenticated user tries to access the Home Route, then the page should be navigated to the --Login Route using the protected route
+-When an authenticated user tries to access the Home Route, Products Route or Cart Route, then the page should be navigated to the respective route using the protected route
+-API Requests & Responses
+
+
+
+
+### Components Structure
+Home
+Login
+Signup
+
+
+### Use these files to complete the implementation:
+
+src/App.js
+src/components/Login/index.js
+src/components/Signup/index.js
+src/components/Home/index.js
+
+
+### Important Note
+Click to view
+The following instructions are required for the tests to pass
+
+Home route should consist of / in the URL path
+Login route should consist of /login in the URL path
+Signup route should consist of /signup in the URL path
+No need to use the BrowserRouter in App.js as we have already included in index.js
+
+
+### Resources
+Third party packages
+Things to Keep in Mind
+All components you implement should go in the src/components directory.
+Don't change the component folder names as those are the files being imported into the tests.
+Do not remove the pre-filled code
+Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
